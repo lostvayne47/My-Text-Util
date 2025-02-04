@@ -1,0 +1,17 @@
+.text-stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid;
+}
+
+.text-stats-table th,
+.text-stats-table td {
+  border: 1px solid;
+  padding: 8px;
+  text-align: left;
+}
+
+.text-stats-table td:first-child,
+.text-stats-table th:first-child {
+  font-weight: bold;
+}

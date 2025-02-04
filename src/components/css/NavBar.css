@@ -1,0 +1,24 @@
+.theme-button {
+  border-radius: 10px;
+  width: 5rem;
+  text-align: center;
+  align-content: center;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.red {
+  background-color: #d52f46 !important;
+  border: 1px solid #d52f46 !important;
+  color: #faf9f6 !important;
+}
+.blue {
+  background-color: #2f88d5 !important;
+  border: 1px solid #2f88d5 !important;
+  color: #faf9f6 !important;
+}
+.green {
+  background-color: #1dbc3a !important;
+  border: 1px solid #1dbc3a !important;
+  color: #faf9f6 !important;
+}
