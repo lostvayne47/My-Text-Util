@@ -1,10 +1,10 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
 import TextForm from "./components/TextForm";
-// import About from "./components/About";
+import About from "./components/About";
 import { useState } from "react";
 import Alert from "./components/Alert";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   const [mode, setMode] = useState("light"); //Whether Dark mode is enabled or not
@@ -37,8 +37,8 @@ function App() {
 
   return (
     <>
-      {/* <BrowserRouter>
-        <div className="container m-5">
+      <BrowserRouter>
+        <div className="container my-5">
           <NavBar
             title="Text Utilities"
             aboutText="About"
@@ -46,20 +46,24 @@ function App() {
             toggleMode={toggleMode}
             showAlert={showAlert}
           />
-          <Alert alert={alert} />
-          <Routes>
-            <Route exact path="/about" element={<About mode={mode} />} />
-            <Route
-              exact
-              path="/"
-              element={<TextForm heading="Welcome!!!" showAlert={showAlert} />}
-            />
-          </Routes>
-          <TextForm heading="Welcome!!!" showAlert={showAlert} />
-        </div>
-      </BrowserRouter> */}
 
-      <div className="container m-5">
+          <div className="container my-5">
+            <Alert alert={alert} />
+            <Routes>
+              <Route exact path="/about" element={<About mode={mode} />} />
+              <Route
+                exact
+                path="/"
+                element={
+                  <TextForm heading="Welcome!!!" showAlert={showAlert} />
+                }
+              />
+            </Routes>
+          </div>
+        </div>
+      </BrowserRouter>
+
+      {/* <div className="container m-5">
         <NavBar
           title="Text Utilities"
           aboutText="About"
@@ -73,7 +77,7 @@ function App() {
         <div className="container my-5">
           <TextForm heading="Welcome!!!" showAlert={showAlert} />
         </div>
-      </div>
+      </div> */}
     </>
   );
 }
